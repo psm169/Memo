@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/fragmentContainer5"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment"
+
+        android:name="com.bignerdranch.android.memo.Categories.MemoKindCategoriSettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        tools:layout="@layout/fragment_memo_list_kind_setting_categori"
+        >
+
+    </fragment>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/list_fragment_memo_button"
+        android:name="com.bignerdranch.android.memo.Categories.MemoListButtonFragment"
+        android:id="@+id/categori_list_button_fragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.bignerdranch.android.memo.Categories.MemokindCategoriFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        tools:layout="@layout/fragment_memo_list_kind_categori"
+        >
+
+    </fragment>
+</LinearLayout>

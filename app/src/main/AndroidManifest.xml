@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bignerdranch.android.memo">
+
+
+    <uses-permission android:name="android.permission.INTERNET">
+
+    </uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity
+            android:name=".Memoes.MemoListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Memoes.MemoActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Categories.MemoListCategoriActivity"
+            android:label="카테고리 리스트">
+
+
+
+        </activity>
+        <activity
+            android:name=".Categories.MemoCategoriActivity"
+            android:label="카테고리">
+
+        </activity>
+
+        <activity
+            android:name=".Categories.MemokindCategoriActivity"
+            android:label="카테고리 분류">
+        </activity>
+
+        <activity android:name=".Categories.MemoViewActivity"
+                  android:label="리스트뷰 테스트">
+
+
+        </activity>
+
+    </application>
+
+</manifest>
